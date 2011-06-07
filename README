@@ -1,0 +1,13 @@
+This script will:
+  1) Determine the external IP address of the current computer.
+  2) Do a GeoIP lookup on that IP to determine info about this 
+     computer's current location.
+  3) Return this info.
+This can be used to, for instance, have a current and correct (usually 
+correct enough) zip when retrieving online weather data or movie listings.  
+I wrote it specifically to interact with a weather plugin I used to use 
+with conky.
+
+You do need to have the Geo::IP CPAN module installed and a GeoIPCity.dat 
+file available. Both of these things used to be, and probably still are, 
+available in Debian's apt.
